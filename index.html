@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="header.png" alt="Header Image" class="header-image">
+    </header>  
+
+    <div class="content">
+        <div class="translucent-box">
+        <h1>Oops!</h1>
+        <p>404 - PAGE NOT FOUND</p>
+        <p>Looks like you’ve wandered off the path! But don’t worry, <br/>stand a chance to win a coupon while you’re here!</p>
+        <button id="start-quiz">START QUIZ</button>
+        <button id="main-page">MAIN PAGE</button>
+    </div> 
+    
+    <div id="quiz-popup" class="quiz-popup hidden">
+        <div class="quiz-content">
+            <span id="close-popup">&times;</span>
+            <h2>Quiz Time!</h2>
+            <form id="quiz-form">
+                <div id="quiz-question"></div>
+                <div id="quiz-options" class="quiz-options-grid"></div>
+                <button type="button" id="next-question">Next</button>
+            </form>
+            <div id="quiz-result" class="hidden"></div>
+            <div id="quiz-score"></div>
+            <!-- <button id="retry-quiz" class="hidden">Try Again</button> -->
+            <button id="main-page" class="hidden">Petal back to the main page!</button>
+        </div>
+    </div>
+
+    <!-- Flower image container (hidden by default) -->
+    <div id="flower" class="hidden">
+        <img src="flower.gif" alt="Flower" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
